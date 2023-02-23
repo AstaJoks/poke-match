@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,22 +17,106 @@
 
 <body>
     <header>
+        <!-- Game logo and the heading -->
         <h1 class="heading">
             <img class="logo" src="assets/images/pokemon_logo.png" alt="logo"> Memory Card Game
         </h1>
     </header>
+    <!-- Game area -->
     <section>
-        <div class="game-board"></div>
+        <div class="game-board">
+
+            <div class="memory-card" data-image="pokemon-1">
+                <img class="card-front" src="assets/images/pokemon-1.png" alt="pokemon 1">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-1">
+                <img class="card-front" src="assets/images/pokemon-1.png" alt="pokemon 1">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-2">
+                <img class="card-front" src="assets/images/pokemon-2.png" alt="pokemon 2">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-2">
+                <img class="card-front" src="assets/images/pokemon-2.png" alt="pokemon 2">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-3">
+                <img class="card-front image-hidden" src="assets/images/pokemon-3.png" alt="pokemon 3">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-3">
+                <img class="card-front" src="assets/images/pokemon-3.png" alt="pokemon 3">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-4">
+                <img class="card-front" src="assets/images/pokemon-4.png" alt="pokemon 4">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-4">
+                <img class="card-front" src="assets/images/pokemon-4.png" alt="pokemon 4">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-5">
+                <img class="card-front" src="assets/images/pokemon-5.png" alt="pokemon 5">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-5">
+                <img class="card-front" src="assets/images/pokemon-5.png" alt="pokemon 5">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-6">
+                <img class="card-front" src="assets/images/pokemon-6.png" alt="pokemon 6">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+            <div class="memory-card" data-image="pokemon-6">
+                <img class="card-front" src="assets/images/pokemon-6.png" alt="pokemon 6">
+                <img class="card-back" src="assets/images/pokeball.png" alt="Card Back">
+            </div>
+
+        </div>
+        <!-- Instructions area -->
         <div class="rules">
             <h3 class="rules-title">How to play</h3>
             <p class="rules-text">
-                Train your brain with this memory card game. There are two identical images on the game board. Start the game by flipping a card. Then try to find another card that has the same image as the first. If you can't find a pair, the flipped cards will be flipped back with the face down. Try to remember these images as it becomes easier to find pairs the longer you play! 
-The timer can be useful for measuring your progress, or you can just have fun and completely ignore it.
+                Train your brain with this memory card game. There are two identical images on the game board. Start the
+                game by flipping a card. Then try to find another card that has the same image as the first. If you
+                can't find a pair, the flipped cards will be flipped back with the face down. Try to remember these
+                images as it becomes easier to find pairs the longer you play!
+                The timer can be useful for measuring your progress, or you can just have fun and completely ignore it.
             </p>
+        </div>
+    </section>
+    <!-- Well done message(pop in the new window)-->
+    <section class="well-done-box">
+        <div class="weel-done-msg" id="well-done-msg">
+            <div class="msg-content">
+                <span id="close" class="close">&times;</span>
+                <h2>Well Done!</h2>
+                <br>
+                <p>You have found all 6 pairs!</p>
+                <p>You made <span id="finalMove"> </span> moves </p>
+                <p>in the <span id="totalTime"> </span> </p>
+                <img class="modal-img" src="./assets/images/pokemon-well-done.png" alt="Smiley pokemon">
+            </div>
         </div>
     </section>
 
     <script src="assets/js/script.js"></script>
 </body>
+<!--Footer -->
 <footer class="footer">This website was created for educational purposes. <br> ©2023. All Rights Reserved.</footer>
+
 </html>
