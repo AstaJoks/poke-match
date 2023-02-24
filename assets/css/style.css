@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(yellow, blue);
+    background: yellow;
     font-family: 'Unbounded', cursive;
     color: #020b58;
     text-align: center;
@@ -17,32 +17,55 @@ body {
         text-align: center;
 
     }
-
     .game-board {
-        height: 500px;
-        width: 500px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: blue;
-        border: 10px solid lightblue;
-    }
-
-
-    .images-container {
+        margin: 5px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 10px;
+        justify-content: center;
+        perspective: 1000px;
+        /* to create a 3D flip effect -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
+      
+      }
+      
+      .memory-card {
+        position: relative;
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 0.2);
+        transform: scale(1);
+        transform-style: preserve-3d;
+        /* to position the cards in the 3d space created -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
+        transition: transform .5s;
+      }
+      
+      .memory-card:active {
+        transform: scale(.97);
+        transition: transform .2s;
+      }
+      
+      .memory-card.flip {
+        transform: rotateY(180deg);
+      }
+      
+      .card-front,
+      .card-back {
+        position: absolute;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    .memory-card {
-        background: #494949;
-        width: 15%;
-        margin: 30px 15px;
-    }
-    
-    .card-front{
+        align-items: center;
         width: 100%;
-        border-radius: 15px 15px 0 0;
-    }
-    
+        height: 100%;
+        padding: 1px;
+        background: #020b58;
+        border-width: 2px;
+        overflow: hidden;
+        transition: transform 500ms ease-in-out;
+        backface-visibility: hidden;
+      }
+      
+      .card-front {
+        transform: rotateY(180deg);
+      }
+      
