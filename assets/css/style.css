@@ -1,11 +1,14 @@
 body {
     height: 120vh;
     width: 100;
+    box-sizing: border-box;
     background-image: linear-gradient(yellow, blue);
     font-family: 'Unbounded', cursive;
     color: #020b58;
     text-align: center;
-    border: 5px solid blue;
+    border: 5px solid transparent;
+    border-image: linear-gradient(160deg, blue, yellow);
+    border-image-slice: 1;
   }
 
   .logo {
@@ -90,5 +93,52 @@ body {
       footer {
         font-size: 10px;
       }
+
+
+
+
+
+
+
+
+
+
+
+      @media screen and (min-width: 760px) {
+        .memory-card {
+          height: 150px;
+          width: 150px;
+    }
+
+    .logo {
+      height: 130px;
+    }
+  
+      h1 {
+          font-size: 50px;
+          text-shadow: 1px 1px 1px #16265c,
+            1px 2px 1px #16265c,
+            1px 3px 1px #16265c,
+            1px 4px 1px #16265c,
+            1px 5px 1px #16265c,
+            1px 6px 1px #16265c,
+            1px 7px 1px #16265c,
+          1px 6px 18px rgba(2, 26, 89, 0.4),
+          1px 10px 22px rgba(2, 26, 89, 0.2),
+          1px 35px 25px rgba(2, 26, 89, 0.2),
+          1px 60px 30px rgba(2, 26, 89, 0.4);
+      }
+
+      .rules {
+        font-size: 17px;
+      }
+
+      footer {
+        font-size: 15px;
+      }
+
+      body {
+        height: 130vh;
+  }
       
       
