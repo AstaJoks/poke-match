@@ -1,10 +1,11 @@
 body {
-    height: 100vh;
+    height: 120vh;
     width: 100;
     background-image: linear-gradient(yellow, blue);
     font-family: 'Unbounded', cursive;
     color: #020b58;
     text-align: center;
+    border: 5px solid blue;
   }
 
   .logo {
@@ -80,4 +81,14 @@ body {
       .card-front {
         transform: rotateY(180deg);
       }
+
+      .rules {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      footer {
+        font-size: 10px;
+      }
+      
       
