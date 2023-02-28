@@ -5,145 +5,189 @@
 }
 
 body {
-    font-family: 'Changa', sans-serif;
-    font-weight: bolder;
-    background: url("../images/pokemon_walpaper.png");
-    background-size: cover;
-    position: relative;
-    color: #020b58;
-    text-align: center;
+  font-family: 'Changa', sans-serif;
+  font-weight: bolder;
+  background: url("../images/pokemon_walpaper.png");
+  background-size: cover;
+  position: relative;
+  color: #020b58;
+  text-align: center;
+}
+
+#container {
+  border-radius: 15px;
+  border: 4px solid #020b58;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+
+.logo {
+  height: 80px;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-family: 'Unbounded', cursive;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-align: center;
+  color: #2f6ab2;
+  text-shadow: 1px 1px 1px #16265c,
+    1px 2px 1px #16265c,
+    1px 3px 1px #16265c,
+    1px 4px 1px #16265c,
+    1px 5px 1px #16265c,
+    1px 6px 18px rgba(2, 26, 89, 0.4),
+    1px 10px 22px rgba(2, 26, 89, 0.2),
+    1px 35px 25px rgba(2, 26, 89, 0.2),
+    1px 60px 30px rgba(2, 26, 89, 0.4);
+}
+
+.game-board {
+  margin: 5px 0 10px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 1000px;
+  /* to create a 3D flip effect -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
+
+}
+
+.memory-card {
+  position: relative;
+  cursor: pointer;
+  height: 65px;
+  width: 65px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  /* to position the cards in the 3d space created -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
+  transition: transform .5s;
+}
+
+.memory-card:active {
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  background: #020b58;
+  border: 2px solid rgb(255 254 145);
+  box-shadow: 10px 10px 20px #020b58;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.time {
+  margin: 0 1rem;
+}
+
+.moves {
+  margin: 0 1rem;
+}
+
+.button {
+  width: 100px;
+  margin-top: 5px;
+  border: 2px solid #002169;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #2f6ab2, #020b58);
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(2, 26, 89, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #2f6ab2;
+  transform: scale(1.1);
+}
+
+.rules {
+  margin-top: 30px;
+  background-color: rgb(255 254 145 / 70%);
+  font-size: 14px;
+  padding: 25px;
+}
+
+footer {
+  font-size: 10px;
+  padding: 30px;
+}
+
+@media screen and (min-width: 760px) {
+  .memory-card {
+    height: 150px;
+    width: 150px;
   }
 
   .logo {
-    height: 80px;
-    padding-right: 10px;
-    margin-top: 20px;
+    height: 130px;
   }
 
-    h1 {
-        font-family: 'Unbounded', cursive;
-        font-size: 23px;
-        font-weight: normal;
-        text-align: center;
-        color: #2f6ab2;
-        text-shadow: 1px 1px 1px #16265c,
-          1px 2px 1px #16265c,
-          1px 3px 1px #16265c,
-          1px 4px 1px #16265c,
-          1px 5px 1px #16265c,
-        1px 6px 18px rgba(2, 26, 89, 0.4),
-        1px 10px 22px rgba(2, 26, 89, 0.2),
-        1px 35px 25px rgba(2, 26, 89, 0.2),
-        1px 60px 30px rgba(2, 26, 89, 0.4);
-    }
+  h1 {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #16265c,
+      1px 2px 1px #16265c,
+      1px 3px 1px #16265c,
+      1px 4px 1px #16265c,
+      1px 5px 1px #16265c,
+      1px 6px 1px #16265c,
+      1px 7px 1px #16265c,
+      1px 6px 18px rgba(2, 26, 89, 0.4),
+      1px 10px 22px rgba(2, 26, 89, 0.2),
+      1px 35px 25px rgba(2, 26, 89, 0.2),
+      1px 60px 30px rgba(2, 26, 89, 0.4);
+  }
 
-    .game-board {
-        margin: 5px 0 10px;
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        grid-gap: 10px;
-        justify-content: center;
-        perspective: 1000px;
-        /* to create a 3D flip effect -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
-      
-      }
-      
-      .memory-card {
-        position: relative;
-        cursor: pointer;
-        height: 65px;
-        width: 65px;
-        transform: scale(1);
-        transform-style: preserve-3d;
-        /* to position the cards in the 3d space created -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
-        transition: transform .5s;
-      }
-      
-      .memory-card:active {
-        transform: scale(.97);
-        transition: transform .2s;
-      }
-      
-      .memory-card.flip {
-        transform: rotateY(180deg);
-      }
-      
-      .card-front,
-      .card-back {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        padding: 1px;
-        background: #020b58;
-        border: 2px solid white;
-        box-shadow: 10px 10px 20px #020b58;
-        overflow: hidden;
-        transition: transform 500ms ease-in-out;
-        backface-visibility: hidden;
-      }
-      
-      .card-front {
-        transform: rotateY(180deg);
-      }
+  .time {
+    margin-right: 180px;
+    font-size: 17px;
+  }
 
-      .rules {
-        margin-top: 30px;
-        background-color: rgb(255 254 145 / 70%);
-        font-size: 14px;
-        padding: 25px;
-      }
+  .moves {
+    margin-left: 180px;
+    font-size: 17px;
+  }
 
-      footer {
-        font-size: 10px;
-        padding: 30px;
-      }
+  #moves {
+    font-size: 17px;
+  }
 
-      @media screen and (min-width: 760px) {
-        .memory-card {
-          height: 150px;
-          width: 150px;
-    }
+  .rules {
+    font-size: 20px;
+  }
 
-    .logo {
-      height: 130px;
-    }
-  
-      h1 {
-          font-size: 50px;
-          text-shadow: 1px 1px 1px #16265c,
-            1px 2px 1px #16265c,
-            1px 3px 1px #16265c,
-            1px 4px 1px #16265c,
-            1px 5px 1px #16265c,
-            1px 6px 1px #16265c,
-            1px 7px 1px #16265c,
-          1px 6px 18px rgba(2, 26, 89, 0.4),
-          1px 10px 22px rgba(2, 26, 89, 0.2),
-          1px 35px 25px rgba(2, 26, 89, 0.2),
-          1px 60px 30px rgba(2, 26, 89, 0.4);
-      }
-
-      .rules {
-        font-size: 17px;
-      }
-
-      footer {
-        font-size: 15px;
-      }
-      
-
-
-
-
-
-
-
-
-
-
-
-  
-
+  footer {
+    font-size: 15px;
+  }
