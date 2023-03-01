@@ -100,23 +100,24 @@ h1 {
 }
 
 .controls {
-  display: flex;
-  justify-content: center;
+ display: inline-block;
   text-align: center;
-  margin-top: 5px;
+  font-size: 14px;
 }
 
 .time {
-  margin: 0 1rem;
+  margin: 0 10px;
 }
 
 .moves {
-  margin: 0 1rem;
+  margin: 0 10px 10px 30px;
 }
 
 .button {
-  width: 100px;
-  margin-top: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 2px;
+  width: 110px;
   border: 2px solid #002169;
   border-radius: 5px;
   background: linear-gradient(45deg, #2f6ab2, #020b58);
@@ -134,7 +135,7 @@ h1 {
 }
 
 .rules {
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: rgb(255 254 145 / 70%);
   font-size: 14px;
   padding: 25px;
@@ -185,6 +186,12 @@ footer {
   }
 
   .rules {
+    font-size: 20px;
+  }
+
+  .button {
+    width: 170px;
+    height: 40px;
     font-size: 20px;
   }
 
