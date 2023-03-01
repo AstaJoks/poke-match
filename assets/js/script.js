@@ -3,7 +3,7 @@
  */
  const cards = document.querySelectorAll('.memory-card');
  const moveContainer = document.querySelector(".moves");
- const modal = document.getElementById('modal');
+ const section = document.getElementById('section');
  const timeContainer = document.querySelector(".time");
  const MAX_MATCH = 8;
  const button = document.querySelector("button");
@@ -21,28 +21,83 @@
  cards.forEach(card => card.addEventListener('click', flipCard)); // listen for card flips
  shuffle();
 
+ button.addEventListener('click', startNewGame); // listen for open click for a new game
 
-function flipCard () {
+
+ // flip the cards
+ function flipCard() {
+    if (!gameOn) {
+        gameOn = true;
+        timer();
+    }
+    if (lockBoard) return; 
+    if (this === firstCard) return;
+
+    this.classList.add('flip'); 
+
+    if (!flippedCard) { 
+
+        flippedCard = true;
+        firstCard = this; 
+
+        return;
+
+    }
+
+    secondCard = this; 
+
+    checkCardMatch();
+}
+
+
+// check the card match/no match
+function checkCardMatch() {
+    let isMatch = firstCard.dataset.image === secondCard.dataset.image;
+    if (isMatch) perfectMatch += 1;
+
+    if (isMatch) pairMatch();
+    else noMatch();
+
+    if (perfectMatch === MAX_MATCH) winGame();
+}
+
+// matched cards will be disabled for clicks once they are flipped
+function pairMatch() {
+
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+    resetBoard();
+}
+
+// if no match, board is locked until cards are flipped back
+function noMatch() {
+    lockBoard = true;
+
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+
+        resetBoard();
+    }, 700);
+}
+
+
+//cards are reset after each round
+function resetBoard() {
+    [flippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+
+     // Add move
+     addTime();
+}
+
+
+
+function time () {
 
 }
 
-function checkCardMatch () {
-
-}
-
-function pairMatch () {
-
-}
-
-function checkNoMatch () {
-
-}
-
-function timer () {
-
-}
-
-function cstopTime () {
+function stopTime () {
 
 }
 
@@ -58,6 +113,22 @@ function winGame () {
 
 }
 
-function reset () {
-
+ // New Game Button 
+ function reset() {
+    setTimeout(() => {
+        flippedCard = false;
+        [firstCard, secondCard] = [null, null];
+        stopTime();
+        gameOn = false;
+        timeStart = false;
+        seconds = 0;
+        minutes = 0;
+        timeContainer.innerHTML = "Timer 0:00";
+        moves = 0;
+        moveContainer.innerHTML = 0;
+        perfectMatch = 0;
+        cards.forEach(cardReset => cardReset.classList.remove('flip'));
+        shuffle();
+        cards.forEach(card => card.addEventListener('click', flipCard));
+    }, 500);
 }
