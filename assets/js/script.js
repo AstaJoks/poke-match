@@ -28,7 +28,7 @@
  function flipCard() {
     if (!gameOn) {
         gameOn = true;
-        timer();
+        time();
     }
     if (lockBoard) return; 
     if (this === firstCard) return;
@@ -87,23 +87,19 @@ function resetBoard() {
     [flippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 
-     // Add move
-     addTime();
+// Add moves
+     addMove();
 }
 
+//Move counter
+moves = 0;
+moveContainer.innerHtml = 0;
 
-
-function time () {
-
+function addMove() {
+    moves++;
+    moveContainer.innerHTML = moves;
 }
 
-function stopTime () {
-
-}
-
-function addMove () {
-
-}
 
 function resetGame () {
 
@@ -118,12 +114,7 @@ function winGame () {
     setTimeout(() => {
         flippedCard = false;
         [firstCard, secondCard] = [null, null];
-        stopTime();
         gameOn = false;
-        timeStart = false;
-        seconds = 0;
-        minutes = 0;
-        timeContainer.innerHTML = "Timer 0:00";
         moves = 0;
         moveContainer.innerHTML = 0;
         perfectMatch = 0;
@@ -132,3 +123,11 @@ function winGame () {
         cards.forEach(card => card.addEventListener('click', flipCard));
     }, 500);
 }
+
+
+
+
+
+
+
+
