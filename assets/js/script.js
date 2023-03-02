@@ -5,7 +5,7 @@
  const moveContainer = document.querySelector(".moves");
  const section = document.getElementById('section');
  const MAX_MATCH = 8;
- const button = document.querySelector("button");
+ const button = document.querySelector(".button");
 
  
  let runGame = false;
@@ -20,14 +20,13 @@
  cards.forEach(card => card.addEventListener('click', flipCard)); // listen for card flips
  shuffle();
 
- button.addEventListener('click', startNewGame); // listen for open click for a new game
+ button.addEventListener('click', resetGame); // listen for reset game
 
 
  // flip the cards
  function flipCard() {
     if (!runGame) {
         runGame= true;
-        time();
     }
     if (lockBoard) return; 
     if (this === firstCard) return;
@@ -78,26 +77,26 @@ function noMatch() {
 
         resetBoard();
     }, 600);
-}
 
+        addMove();
+    }
+    
+    //Move counter
+    moves = 0;
+    moveContainer.innerHtml = 0;
+    
+    function addMove() {
+        moves++;
+        moveContainer.innerHTML = moves;
+    }
 
 //cards are reset after each round
 function resetBoard() {
     [flippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 
-     addMove();
 }
 
-// Add moves
-moves = 0;
-moveContainer.innerHtml = 0;
-
-function addMove() {
-    moves++;
-    moveContainer.innerHTML = moves;
-
-}
 
 // Card shuffles
 function shuffle() {
@@ -122,7 +121,7 @@ function winGame () {
     setTimeout(() => {
         flippedCard = false;
         [firstCard, secondCard] = [null, null];
-        gameOn = false;
+        runGame = false;
         moves = 0;
         moveContainer.innerHTML = 0;
         perfectMatch = 0;
