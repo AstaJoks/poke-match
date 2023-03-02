@@ -106,10 +106,9 @@ h1 {
 }
 
 .button {
-  margin: 0 auto;
   margin-top: 10px;
   padding: 2px;
-  width: 110px;
+  width: 120px;
   border: 2px solid #002169;
   border-radius: 5px;
   background: linear-gradient(45deg, #2f6ab2, #020b58);
@@ -136,6 +135,12 @@ h1 {
 footer {
   font-size: 10px;
   padding: 30px;
+}
+
+.win-msg-img {
+  height: 80px;
+  padding-right: 10px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 760px) {
@@ -184,3 +189,4 @@ footer {
   footer {
     font-size: 15px;
   }
+}
