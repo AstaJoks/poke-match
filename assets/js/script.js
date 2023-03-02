@@ -4,18 +4,17 @@
  const cards = document.querySelectorAll('.memory-card');
  const moveContainer = document.querySelector(".moves");
  const section = document.getElementById('section');
- const timeContainer = document.querySelector(".time");
  const MAX_MATCH = 8;
  const button = document.querySelector("button");
 
  
- let gameOn = false;
+ let runGame = false;
  let perfectMatch = 0;
  let flippedCard = false; //used to check if card has already been clicked 
  let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
  let firstCard, secondCard; //Used to check for cards match
  let moves = 0;
- let finalTime = "";
+ 
  
  //events
  cards.forEach(card => card.addEventListener('click', flipCard)); // listen for card flips
@@ -26,8 +25,8 @@
 
  // flip the cards
  function flipCard() {
-    if (!gameOn) {
-        gameOn = true;
+    if (!runGame) {
+        runGame= true;
         time();
     }
     if (lockBoard) return; 
@@ -78,7 +77,7 @@ function noMatch() {
         secondCard.classList.remove('flip');
 
         resetBoard();
-    }, 700);
+    }, 600);
 }
 
 
@@ -87,17 +86,26 @@ function resetBoard() {
     [flippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 
-// Add moves
      addMove();
 }
 
-//Move counter
+// Add moves
 moves = 0;
 moveContainer.innerHtml = 0;
 
 function addMove() {
     moves++;
     moveContainer.innerHTML = moves;
+
+}
+
+// Card shuffles
+function shuffle() {
+    cards.forEach(cards => {
+        let randomPosition = Math.floor(Math.random() * 16);
+        cards.style.order = randomPosition;
+    });
+
 }
 
 
