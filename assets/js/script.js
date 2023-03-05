@@ -3,7 +3,7 @@
  */
  const cards = document.querySelectorAll('.memory-card');
  const moveContainer = document.querySelector(".moves");
- const section = document.getElementById('section');
+ const message = document.getElementById('message');
  const MAX_MATCH = 8;
  const button = document.querySelector(".button");
 
@@ -14,6 +14,7 @@
  let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
  let firstCard, secondCard; //Used to check for cards match
  let moves = 0;
+ let finalTime = "";
  
  
  //events
@@ -112,11 +113,29 @@ function resetGame () {
 
 }
 
-function winGame () {
-
+function winGame() {
+    showWinMessage();
 }
 
- // New Game Button 
+
+ // Win message pop up 
+ function showWinMessage() {
+    message.style.display = "block";
+    finalTime = moveContainer.innerHTML;
+    // showing moves on modal
+    document.getElementById("finalMove").innerHTML = moves;
+    reset();
+
+
+}
+// when the user clicks the (x) To close the win messages
+window.onclick = function(event) {
+    if (event.target.id == 'close') {
+        document.getElementById('modal').style.display = "none";
+    }
+};
+
+ // Reset/New Game Button 
  function reset() {
     setTimeout(() => {
         flippedCard = false;
@@ -130,6 +149,7 @@ function winGame () {
         cards.forEach(card => card.addEventListener('click', flipCard));
     }, 500);
 }
+
 
 
 

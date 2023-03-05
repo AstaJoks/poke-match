@@ -138,13 +138,15 @@
     </section>
 
     <!-- Win Message area -->
-    <section>
-        <div class="win-msg">
-            <div class="modal-content">
+    <section class="message-area">
+        <div id="message" class="message">
+            <div id="win-msg">
                 <h2>Congratulations!</h2>
-                <p>You have won! <br> Let's try again!</p>
+                <p>You have caught them all! 
+                    <p>You made <span id="finalMove"> </span> moves <br> Let's try again!</p>
+                    <img class="win-msg-img" src="assets/images/Pokemon-Ash-Transparent-Background.png" alt="Pikacu smiling">
                 <button class="button" onclick="reset()">New Game</button>
-                <img class="win-msg-img" src="assets/images/pokemon-well-done.png" alt="Pikacu smiling">
+                
             </div>
         </div>
     </section>
