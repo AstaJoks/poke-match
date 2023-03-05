@@ -4,6 +4,8 @@
   border: none;
 }
 
+
+/* Body area */
 body {
   font-family: 'Changa', sans-serif;
   font-weight: bolder;
@@ -22,6 +24,7 @@ body {
 }
 
 
+/* Logo and heading area */
 .logo {
   height: 80px;
   padding-right: 10px;
@@ -47,6 +50,8 @@ h1 {
     1px 60px 30px rgba(2, 26, 89, 0.4);
 }
 
+
+/* Game board area */
 .game-board {
   margin: 5px 0 10px;
   display: grid;
@@ -54,7 +59,7 @@ h1 {
   grid-gap: 10px;
   justify-content: center;
   perspective: 1000px;
-  /* to create a 3D flip effect -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
+  /* to create a 3D flip effect - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
 
 }
 
@@ -65,7 +70,7 @@ h1 {
   width: 65px;
   transform: scale(1);
   transform-style: preserve-3d;
-  /* to position the cards in the 3d space created -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
+  /* to position the cards in the 3d space created - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
   transition: transform .5s;
 }
 
@@ -99,6 +104,8 @@ h1 {
   transform: rotateY(180deg);
 }
 
+
+/* Controls and reset button area */
 .controls {
  display: inline-block;
   text-align: center;
@@ -125,6 +132,8 @@ h1 {
   transform: scale(1.1);
 }
 
+
+/* New game button area */
 .close-button {
   margin-top: 10px;
   padding: 5px;
@@ -146,6 +155,7 @@ h1 {
 }
 
 
+/* Instructions area */
 .rules {
   margin-top: 20px;
   background-color: rgb(255 254 145 / 70%);
@@ -153,13 +163,15 @@ h1 {
   padding: 25px;
 }
 
+
+/* Footer area */
 footer {
   font-size: 10px;
   padding: 30px;
 }
 
-/* Win message area */
 
+/* Win message area */
 .message {
   /*Hidden by default */
   display: none;
@@ -189,11 +201,13 @@ p {
   border-radius: 20px;
 }
 
+
 /* Win message image*/
 .win-msg-img {
   display: inline-block;
   width: 15em;
 }
+
 
 
 /* Media Queries */
