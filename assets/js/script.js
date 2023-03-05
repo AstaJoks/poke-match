@@ -6,6 +6,7 @@
  const message = document.getElementById('message');
  const MAX_MATCH = 8;
  const button = document.querySelector(".button");
+ const closeButton = document.querySelector(".close-button");
 
  
  let runGame = false;
@@ -21,7 +22,8 @@
  cards.forEach(card => card.addEventListener('click', flipCard)); // listen for card flips
  shuffle();
 
- button.addEventListener('click', resetGame); // listen for reset game
+ button.addEventListener('click', reset); // listen for reset game
+ closeButton.addEventListener('click', closeWinMessage); // listen for close the win message and start a new game
 
 
  // flip the cards
@@ -108,11 +110,6 @@ function shuffle() {
 
 }
 
-
-function resetGame () {
-
-}
-
 function winGame() {
     showWinMessage();
 }
@@ -122,20 +119,16 @@ function winGame() {
  function showWinMessage() {
     message.style.display = "block";
     finalTime = moveContainer.innerHTML;
-    // showing moves on modal
+    // showing moves on message
     document.getElementById("finalMove").innerHTML = moves;
     reset();
-
-
 }
-// when the user clicks the (x) To close the win messages
-window.onclick = function(event) {
-    if (event.target.id == 'close') {
-        document.getElementById('modal').style.display = "none";
-    }
-};
 
- // Reset/New Game Button 
+function closeWinMessage() {
+    message.style.display = "none";
+}
+
+ // Reset Game Button 
  function reset() {
     setTimeout(() => {
         flippedCard = false;

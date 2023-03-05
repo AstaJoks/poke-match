@@ -125,6 +125,27 @@ h1 {
   transform: scale(1.1);
 }
 
+.close-button {
+  margin-top: 10px;
+  padding: 5px;
+  width: 120px;
+  border: 2px solid #002169;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #2f6ab2, #020b58);
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(2, 26, 89, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  background: #2f6ab2;
+  transform: scale(1.1);
+}
+
+
 .rules {
   margin-top: 20px;
   background-color: rgb(255 254 145 / 70%);
@@ -137,7 +158,7 @@ footer {
   padding: 30px;
 }
 
-/* Win message modal */
+/* Win message area */
 
 .message {
   /*Hidden by default */
@@ -176,7 +197,8 @@ p {
 
 
 /* Media Queries */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 750px) {
+
   .memory-card {
     height: 150px;
     width: 150px;
@@ -224,6 +246,6 @@ p {
   }
 
   #win-msg{
-    margin: 220px 50px;
+    margin: 220px 200px;
   }
 }
