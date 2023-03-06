@@ -31,6 +31,34 @@ body {
   margin-top: 20px;
 }
 
+#sound {
+  display: none;
+}
+
+#toggle-sound label {
+  display: inline-block;
+  text-align: left;
+  width: 2rem;
+}
+
+@media(hover:hover) {
+  toggle-sound label:hover {
+      color: #ff99c9;
+  }
+}
+
+#toggle-sound .sound-on {
+  display: none;
+}
+
+#toggle-sound input[type="checkbox"]:checked~label .sound-on {
+  display: inline-block;
+}
+
+#toggle-sound input[type="checkbox"]:checked~label .sound-off {
+  display: none;
+}
+
 h1 {
   margin-bottom: 15px;
   font-family: 'Unbounded', cursive;

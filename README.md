@@ -3,7 +3,7 @@
 
 
 ![Responsice Mockup]
-Visit the live site [Here])
+Visit the live site [Here](https://astajoks.github.io/pokemon-memory-card-game/)
 
 
 ## Contents
