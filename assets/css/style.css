@@ -95,16 +95,14 @@ h1 {
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   justify-content: center;
-  perspective: 1000px;
-  /* to create a 3D flip effect - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
 
 }
 
 .memory-card {
   position: relative;
   cursor: pointer;
-  height: 65px;
-  width: 65px;
+  height: 70px;
+  width: 70px;
   transform: scale(1);
   transform-style: preserve-3d;
   /* to position the cards in the 3d space created - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
@@ -131,7 +129,7 @@ h1 {
   padding: 1px;
   background: #020b58;
   border: 2px solid rgb(255 254 145);
-  box-shadow: 10px 10px 20px #020b58;
+  box-shadow: 5px 5px 15px #020b58;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
   backface-visibility: hidden;
@@ -248,11 +246,11 @@ p {
 
 
 /* Media Queries */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 650px) {
 
   .memory-card {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
   }
 
   .logo {

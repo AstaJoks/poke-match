@@ -1,51 +1,52 @@
 /**
  * GENERAL VARIABLES
  */
- const cards = document.querySelectorAll('.memory-card');
- const moveContainer = document.querySelector(".moves");
- const message = document.getElementById('message');
- const MAX_MATCH = 8;
- const button = document.querySelector(".button");
- const closeButton = document.querySelector(".close-button");
 
- 
- let runGame = false;
- let perfectMatch = 0;
- let flippedCard = false; //used to check if card has already been clicked 
- let lockBoard = false; // used to lock the board until each set of cards are finished are finished before selecting the next two
- let firstCard, secondCard; //Used to check for cards match
- let moves = 0;
- let finalTime = "";
- 
- 
- //events
- cards.forEach(card => card.addEventListener('click', flipCard)); // listen for card flips
- shuffle();
-
- button.addEventListener('click', reset); // listen for reset game
- closeButton.addEventListener('click', closeWinMessage); // listen for close the win message and start a new game
+const cards = document.querySelectorAll('.memory-card');
+const moveContainer = document.querySelector(".moves");
+const message = document.getElementById('message');
+const MAX_MATCH = 8;
+const button = document.querySelector(".button");
+const closeButton = document.querySelector(".close-button");
 
 
- // flip the cards
- function flipCard() {
+let runGame = false;
+let perfectMatch = 0;
+let flippedCard = false;
+let lockBoard = false; 
+let firstCard, secondCard; 
+let moves = 0;
+let finalTime = "";
+
+
+//events
+cards.forEach(card => card.addEventListener('click', flipCard)); // listen for card flips
+shuffle();
+
+button.addEventListener('click', reset); // listen for reset game
+closeButton.addEventListener('click', closeWinMessage); // listen for close the win message and start a new game
+
+// function to flip cards - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game
+// flip the cards
+function flipCard() {
     if (!runGame) {
-        runGame= true;
+        runGame = true;
     }
-    if (lockBoard) return; 
+    if (lockBoard) return;
     if (this === firstCard) return;
 
-    this.classList.add('flip'); 
+    this.classList.add('flip');
 
-    if (!flippedCard) { 
+    if (!flippedCard) {
 
         flippedCard = true;
-        firstCard = this; 
+        firstCard = this;
 
         return;
 
     }
 
-    secondCard = this; 
+    secondCard = this;
 
     checkCardMatch();
 }
@@ -81,19 +82,17 @@ function noMatch() {
         resetBoard();
     }, 600);
 
-        addMove();
-    }
-    
-    //Move counter
-    moves = 0;
-    moveContainer.innerHtml = 0;
-    
-    function addMove() {
-        moves++;
-        moveContainer.innerHTML = moves;
-    }
+    addMove();
+}
 
-//cards are reset after each round
+// Function to count moves
+
+function addMove() {
+    moves++;
+    moveContainer.innerHTML = moves;
+}
+
+// // Reset cards after each round
 function resetBoard() {
     [flippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
@@ -115,8 +114,8 @@ function winGame() {
 }
 
 
- // Win message pop up 
- function showWinMessage() {
+// Win message pop up - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game
+function showWinMessage() {
     message.style.display = "block";
     finalTime = moveContainer.innerHTML;
     // showing moves on message
@@ -128,8 +127,8 @@ function closeWinMessage() {
     message.style.display = "none";
 }
 
- // Reset Game Button 
- function reset() {
+// Reset Game Button - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game
+function reset() {
     setTimeout(() => {
         flippedCard = false;
         [firstCard, secondCard] = [null, null];
@@ -142,12 +141,3 @@ function closeWinMessage() {
         cards.forEach(card => card.addEventListener('click', flipCard));
     }, 500);
 }
-
-
-
-
-
-
-
-
-

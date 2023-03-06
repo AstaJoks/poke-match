@@ -21,7 +21,7 @@
 
 <body id="container">
     <header>
-        <!-- Game logo and the heading -->
+        <!-- Game logo, sound button and the heading -->
         <img class="logo" src="assets/images/pokemon_logo_.png" alt="logo">
         <div id="flap-sound">
             <div id="toggle-sound">
@@ -146,13 +146,13 @@
         </div>
     </section>
 
-    <!-- Win Message area -->
+    <!-- Win Message area -adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game -->
     <section class="message-area">
         <div id="message" class="message">
             <div id="win-msg">
-                <h2>Congratulations!</h2>
-                <p>You have caught them all! 
-                    <p>You made <span id="finalMove"> </span> moves <br> Let's try again!</p>
+                <h2>Well done!</h2>
+                <p>You have caught them all in <span id="finalMove"> </span> moves! <br>
+                    <p>Let's try again!</p>
                     <img class="win-msg-img" src="assets/images/Pokemon-Ash-Transparent-Background.png" alt="Pikacu smiling">
                 <button class="close-button" onclick="reset()">New Game</button>
                 
