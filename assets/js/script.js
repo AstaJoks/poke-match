@@ -2,6 +2,7 @@
  * GENERAL VARIABLES
  */
 
+const flipSound = document.querySelector(`audio[data-sound='flip']`);
 const cards = document.querySelectorAll('.memory-card');
 const moveContainer = document.querySelector(".moves");
 const message = document.getElementById('message');
@@ -9,7 +10,7 @@ const MAX_MATCH = 8;
 const button = document.querySelector(".button");
 const closeButton = document.querySelector(".close-button");
 
-
+let playSound = true;
 let runGame = false;
 let perfectMatch = 0;
 let flippedCard = false;
@@ -141,3 +142,10 @@ function reset() {
         cards.forEach(card => card.addEventListener('click', flipCard));
     }, 500);
 }
+
+// Control sound button off/on - // Reset Game Button - adapted from https://github.com/tomdu3/smiley-memories
+let soundButton = document.getElementById('sound-toggle');
+soundButton.onclick = function(e) {
+  playSound = playSound ? false : true;
+  this.innerHTML = this.innerHTML === '<i class="fa-solid fa-volume-high"></i>' ? '<i class="fa-solid fa-volume-xmark"></i>' : '<i class="fa-solid fa-volume-high"></i>';
+};

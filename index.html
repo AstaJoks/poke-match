@@ -23,15 +23,15 @@
     <header>
         <!-- Game logo, sound button and the heading -->
         <img class="logo" src="assets/images/pokemon_logo_.png" alt="logo">
-        <div id="flap-sound">
-            <div id="toggle-sound">
-            <input type="checkbox" id="sound" aria-label="Sound">
-            <label for="sound">
-                <i class="fas fa-volume-mute sound-off"></i>
-                <i class="fas fa-volume-up sound-on"></i>
-            </label>
-            <audio src="assets/audio/flip-sound.ogg" id="music"></audio>
-        </div>
+        <!-- Toggle sound off/on button -->
+      <div id="sound-div">
+        <button class="btn" id="sound-toggle"><i class="fa-solid fa-volume-high"></i></button>
+      </div>
+    </div>
+    <!-- audio data loading -->
+    <audio data-sound="flip" >
+      <source src="assets/audio/flip-sound.ogg" type="audio/ogg">
+    </audio>
         <h1>Memory Card Game</h1>
 
     </header>

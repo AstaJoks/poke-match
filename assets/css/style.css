@@ -31,41 +31,31 @@ body {
   margin-top: 20px;
 }
 
-#flap-sound i {
-  font-size: x-large;
-  color: #2f6ab2;
-  display: flex;
-  justify-content: center;
-  padding-top: 7px;
+.btn {
+  padding: 7px;
+  width: 50px;
+  border: 2px solid #002169;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #2f6ab2, #020b58);
+  color: white;
+  box-shadow: 0 0 10px rgba(2, 26, 89, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #2f6ab2;
+  transform: scale(1.1);
 }
 
 
-#sound {
-  display: none;
+#sound-toggle {
+  font-size: 1.5rem;
 }
 
-#toggle-sound label {
-  display: inline-block;
-  text-align: left;
-  width: 2rem;
-}
-
-@media(hover:hover) {
-  toggle-sound label:hover {
-      color: #2f6ab2;
-  }
-}
-
-#toggle-sound .sound-on {
-  display: none;
-}
-
-#toggle-sound input[type="checkbox"]:checked~label .sound-on {
-  display: inline-block;
-}
-
-#toggle-sound input[type="checkbox"]:checked~label .sound-off {
-  display: none;
+#sound-div,
+#sound-div i {
+  margin: 0px;
 }
 
 h1 {
