@@ -1,7 +1,7 @@
 /**
  * GENERAL VARIABLES
  */
-
+const winSound = document.querySelector(`audio[data-sound='win']`);
 const flipSound = document.querySelector(`audio[data-sound='flip']`);
 const cards = document.querySelectorAll('.memory-card');
 const moveContainer = document.querySelector(".moves");
@@ -114,6 +114,7 @@ function shuffle() {
 
 function winGame() {
     showWinMessage();
+    winSound.play();
 }
 
 
