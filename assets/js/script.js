@@ -38,13 +38,16 @@ function flipCard() {
 
     this.classList.add('flip');
 
+    if (playSound) {
+        flipSound.play();
+      }
+
     if (!flippedCard) {
 
         flippedCard = true;
         firstCard = this;
 
         return;
-
     }
 
     secondCard = this;
@@ -87,7 +90,6 @@ function noMatch() {
 }
 
 // Function to count moves
-
 function addMove() {
     moves++;
     moveContainer.innerHTML = moves;
@@ -143,7 +145,7 @@ function reset() {
     }, 500);
 }
 
-// Control sound button off/on - // Reset Game Button - adapted from https://github.com/tomdu3/smiley-memories
+// Control sound button off/on - adapted from https://github.com/tomdu3/smiley-memories
 let soundButton = document.getElementById('sound-toggle');
 soundButton.onclick = function(e) {
   playSound = playSound ? false : true;

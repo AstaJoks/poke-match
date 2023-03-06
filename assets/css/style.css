@@ -32,8 +32,9 @@ body {
 }
 
 .btn {
-  padding: 7px;
-  width: 50px;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
   border: 2px solid #002169;
   border-radius: 5px;
   background: linear-gradient(45deg, #2f6ab2, #020b58);
@@ -50,7 +51,7 @@ body {
 
 
 #sound-toggle {
-  font-size: 1.5rem;
+  font-size: 13px;
 }
 
 #sound-div,
@@ -255,8 +256,25 @@ p {
     height: 130px;
   }
 
+  .btn {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .button:hover {
+    background: #2f6ab2;
+    transform: scale(1.1);
+  }
+  
+  
+  #sound-toggle {
+    font-size: 20px;
+  }
+  
+
   h1 {
-    font-size: 50px;
+    font-size: 43px;
     text-shadow: 1px 1px 1px #16265c,
       1px 2px 1px #16265c,
       1px 3px 1px #16265c,
