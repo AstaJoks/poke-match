@@ -15,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa&family=Unbounded:wght@500&display=swap"
         rel="stylesheet">
 
- <!-- Link to display css -->
+    <!-- Link to display css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- required links to display favicon in browser tabs -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -30,17 +30,18 @@
         <!-- Game logo, sound button and the heading -->
         <img class="logo" src="assets/images/pokemon_logo_.png" alt="logo">
         <!-- Toggle sound off/on button -->
-      <div id="sound-div">
-        <button class="btn" id="sound-toggle" aria-label="sound-button"><i class="fa-solid fa-volume-high"></i></button>
-      </div>
-    </div>
-    <!-- audio data loading -->
-    <audio data-sound="flip" >
-      <source src="assets/audio/flip_sound.mp3" type="audio/mp3">
-    </audio>
-    <audio data-sound="win" >
-        <source src="assets/audio/win_sound.mp3" type="audio/mp3">
-      </audio>
+        <div id="sound-div">
+            <button class="btn" id="sound-toggle" aria-label="sound-button"><i
+                    class="fa-solid fa-volume-high"></i></button>
+        </div>
+        </div>
+        <!-- audio data loading -->
+        <audio data-sound="flip">
+            <source src="assets/audio/flip_sound.mp3" type="audio/mp3">
+        </audio>
+        <audio data-sound="win">
+            <source src="assets/audio/win_sound.mp3" type="audio/mp3">
+        </audio>
         <h1>Memory Card Game</h1>
 
     </header>
@@ -142,14 +143,16 @@
     <!-- Instructions area -->
     <section>
         <div class="rules">
-            <h2>How to play</h2>
+            <h2 class="rules-text">How to play</h2>
             <p>
-                Train your brain with this memory card game and catch all the pokemons! There are two identical images on the game board. <br>
-                Start the game by flipping a card. Then try to find another card that has the same pokemon as the first. <br> 
-                If you can't find a pair, the flipped cards will be flipped back with the face down. 
-                <br> Try to remember those pokemons as it becomes easier to find pairs the longer you play! <br> 
-                Enjoy!
+                Train your brain with this memory card game and catch all the pokemons! There are two identical images
+                on the game board. <br>
+                Start the game by flipping a card. Then try to find another card that has the same pokemon as the first.
+                <br>
+                If you can't find a pair, the flipped cards will be flipped back with the face down. <br>
+                Try to remember those pokemons as it becomes easier to find pairs the longer you play!
             </p>
+            <h2>Enjoy... You gotta catch 'em all!</h2>
         </div>
     </section>
 
@@ -160,9 +163,10 @@
                 <h2>Well done!</h2>
                 <p>You have caught them all in <span id="finalMove"> </span> moves! <br>
                     <p>let's try again and beat your score!</p>
-                    <img class="win-msg-img" src="assets/images/Pokemon-Ash-Transparent-Background.png" alt="Pikacu smiling">
-                <button class="close-button" onclick="reset()">New Game</button>
-                
+                    <img class="win-msg-img" src="assets/images/Pokemon-Ash-Transparent-Background.png"
+                        alt="Pikacu smiling">
+                    <button class="close-button" onclick="reset()">New Game</button>
+
             </div>
         </div>
     </section>
@@ -172,6 +176,8 @@
     <script src="https://kit.fontawesome.com/af298227b9.js" crossorigin="anonymous"></script>
 </body>
 <!--Footer -->
-<footer class="footer">This website was created for educational purposes. <br> ©2023. All Rights Reserved.</footer>
+<footer>
+    <div class="footer">Pokemon. Memory Card Game. <br> ©2023. All Rights Reserved.</div>
+</footer>
 
 </html>

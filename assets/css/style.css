@@ -160,12 +160,16 @@ h1 {
 
 
 /* Instructions area */
+.rules-text{
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
 .rules {
   margin-top: 20px;
   background-color: rgb(255 254 145 / 70%);
   padding: 25px;
 }
-
 
 /* Footer area */
 footer {
