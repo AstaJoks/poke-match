@@ -236,6 +236,27 @@ p {
   transform: scale(1.1);
 }
 
+.error-heading {
+  margin-top: 15px;
+  font-family: 'Unbounded', cursive;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-align: center;
+  color: #2f6ab2;
+  text-shadow: 1px 1px 1px #16265c,
+    1px 2px 1px #16265c,
+    1px 3px 1px #16265c,
+    1px 4px 1px #16265c,
+    1px 6px 18px rgba(2, 26, 89, 0.4),
+    1px 10px 22px rgba(2, 26, 89, 0.2),
+    1px 35px 25px rgba(2, 26, 89, 0.2),
+}
+
+.trainer {
+  display: inline-block;
+  width: 170px;
+}
 
 
 /* Media Queries */
