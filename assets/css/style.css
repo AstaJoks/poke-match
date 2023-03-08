@@ -8,11 +8,11 @@
 /* Body area */
 body {
   font-family: 'Changa', sans-serif;
-  font-weight: bolder;
   background: url("../images/pokemon_walpaper.png");
   background-size: cover;
   position: relative;
   color: #020b58;
+  font-weight: bolder;
   text-align: center;
 }
 
@@ -159,33 +159,10 @@ h1 {
 }
 
 
-/* New game button area */
-.close-button {
-  margin-top: 10px;
-  padding: 5px;
-  width: 120px;
-  border: 2px solid #002169;
-  border-radius: 5px;
-  background: linear-gradient(45deg, #2f6ab2, #020b58);
-  color: white;
-  font-size: 17px;
-  letter-spacing: 1px;
-  box-shadow: 0 0 10px rgba(2, 26, 89, 0.4);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.close-button:hover {
-  background: #2f6ab2;
-  transform: scale(1.1);
-}
-
-
 /* Instructions area */
 .rules {
   margin-top: 20px;
   background-color: rgb(255 254 145 / 70%);
-  font-size: 14px;
   padding: 25px;
 }
 
@@ -232,6 +209,27 @@ p {
 .win-msg-img {
   display: inline-block;
   width: 150px;
+}
+
+/* New game button area */
+.close-button {
+  margin-top: 10px;
+  padding: 5px;
+  width: 120px;
+  border: 2px solid #002169;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #2f6ab2, #020b58);
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(2, 26, 89, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  background: #2f6ab2;
+  transform: scale(1.1);
 }
 
 
@@ -309,5 +307,4 @@ p {
   footer {
     font-size: 15px;
   }
-
 }
