@@ -160,9 +160,11 @@ h1 {
 
 
 /* Instructions area */
+h2 {
+  font-size: 18px;
+}
 .rules-text{
   text-transform: uppercase;
-  font-size: 25px;
 }
 
 .rules {
@@ -173,7 +175,7 @@ h1 {
 
 /* Footer area */
 footer {
-  font-size: 10px;
+  font-size: 15px;
   padding: 30px;
 }
 
@@ -191,8 +193,8 @@ footer {
 }
 
 p {
-  font-size: 120%;
   padding-bottom: 20px;
+  font-size: 15px;
 }
 
 #win-msg {
@@ -269,10 +271,13 @@ p {
 
 
 @media screen and (min-width: 650px) {
+  #container {
+    width: 80%;
+  }
 
   .memory-card {
-    height: 130px;
-    width: 130px;
+    height: 100px;
+    width: 100px;
   }
 
   .logo {
@@ -297,7 +302,7 @@ p {
   
 
   h1 {
-    font-size: 43px;
+    font-size: 33px;
     text-shadow: 1px 1px 1px #16265c,
       1px 2px 1px #16265c,
       1px 3px 1px #16265c,
@@ -319,7 +324,11 @@ p {
     font-size: 18px;
   }
 
-  .rules {
+  h2 {
+    font-size: 23px;
+  }
+
+  p {
     font-size: 18px;
   }
 
