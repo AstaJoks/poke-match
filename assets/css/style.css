@@ -161,8 +161,10 @@ h1 {
 
 /* Instructions area */
 h2 {
+  padding: 15px;
   font-size: 18px;
 }
+
 .rules-text{
   text-transform: uppercase;
 }
@@ -192,11 +194,6 @@ footer {
   height: 100%;
 }
 
-p {
-  padding-bottom: 20px;
-  font-size: 15px;
-}
-
 #win-msg {
   font-family: 'Changa', sans-serif;
   display: flex;
@@ -214,6 +211,7 @@ p {
 /* Win message image*/
 .win-msg-img {
   display: inline-block;
+  padding: 15px;
   width: 150px;
 }
 
@@ -255,23 +253,21 @@ p {
     1px 10px 22px rgba(2, 26, 89, 0.2),
     1px 35px 25px rgba(2, 26, 89, 0.2);
 }
+.home-nav-button {
+  text-align: center;
+}
 
 #trainer {
-  display: inline-block;
   width: 250px;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .home-nav {
   padding: 10px;
-  margin-top: 15px;
-  font-size: 11px;
+  font-size: 17px;
   background-color: #020b58;
   color: rgb(252, 250, 123);
   display: inline;
-  position: fixed;
-  left: 40%;
-  right: 40%;
   text-decoration: none;
   border-radius: 8px;
   text-transform: uppercase;
@@ -288,10 +284,6 @@ p {
 
 
 @media screen and (min-width: 650px) {
-
-  .home-nav {
-    font-size: 16px;
-  }
 
   #container {
     width: 80%;
