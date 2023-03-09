@@ -10,7 +10,7 @@ const MAX_MATCH = 8;
 const button = document.querySelector(".button");
 const closeButton = document.querySelector(".close-button");
 
-let playSound = true;
+let playSound = false;
 let runGame = false;
 let perfectMatch = 0;
 let flippedCard = false;
@@ -114,7 +114,9 @@ function shuffle() {
 
 function winGame() {
     showWinMessage();
-    winSound.play();
+    if (playSound) {
+        winSound.play();
+      }
 }
 
 
@@ -150,5 +152,5 @@ function reset() {
 let soundButton = document.getElementById('sound-toggle');
 soundButton.onclick = function(e) {
   playSound = playSound ? false : true;
-  this.innerHTML = this.innerHTML === '<i class="fa-solid fa-volume-high"></i>' ? '<i class="fa-solid fa-volume-xmark"></i>' : '<i class="fa-solid fa-volume-high"></i>';
+  this.innerHTML = this.innerHTML === '<i class="fa-solid fa-volume-xmark"></i>' ? '<i class="fa-solid fa-volume-high"></i>' : '<i class="fa-solid fa-volume-xmark"></i>';
 };

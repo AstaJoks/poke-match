@@ -8,7 +8,7 @@
 /* Body area */
 body {
   font-family: 'Changa', sans-serif;
-  background-color: rgb(255 254 145);
+  background-color: rgb(252, 250, 123);
   background-size: cover;
   position: relative;
   color: #020b58;
@@ -119,7 +119,7 @@ h1 {
   height: 100%;
   padding: 1px;
   background: #020b58;
-  border: 2px solid rgb(255 254 145);
+  border: 2px solid rgb(252, 250, 123);
   box-shadow: 5px 5px 15px #020b58;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
@@ -168,8 +168,8 @@ h2 {
 }
 
 .rules {
-  margin-top: 20px;
-  background-color: rgb(255 254 145 / 70%);
+  margin-top: 25px;
+  background-color: rgba(248, 245, 81, 0.7);
   padding: 25px;
 }
 
@@ -203,7 +203,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 254, 145);
+  background-color: rgb(252, 250, 123);
   margin: 40px 50px;
   border: 4px solid #020b58;
   padding: 20px 40px;
@@ -239,9 +239,6 @@ p {
 }
 
 /* 404 page area */
-#error-page {
-  background-color: rgba(255, 254, 145);
-}
 .error-heading {
   margin-top: 15px;
   font-family: 'Unbounded', cursive;
@@ -270,7 +267,7 @@ p {
   margin-top: 15px;
   font-size: 11px;
   background-color: #020b58;
-  color: rgba(255, 254, 145);
+  color: rgb(252, 250, 123);
   display: inline;
   position: fixed;
   left: 40%;
@@ -293,7 +290,7 @@ p {
 @media screen and (min-width: 650px) {
 
   .home-nav {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   #container {
