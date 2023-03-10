@@ -92,8 +92,8 @@ h1 {
 .memory-card {
   position: relative;
   cursor: pointer;
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   transform: scale(1);
   transform-style: preserve-3d;
   /* to position the cards in the 3d space created - adapted from https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game */
@@ -201,7 +201,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgb(252, 250, 123);
-  margin: 40px 50px;
+  margin: 40px 150px;
   border: 4px solid #020b58;
   padding: 20px 40px;
   border-radius: 20px;
@@ -275,13 +275,37 @@ footer {
 
 
 /* Media Queries */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 320px) {
 
   #win-msg{
-    margin: 200px 180px;
+    margin: 40px 30px;
   }
-}
 
+  h1 {
+    font-size: 19px;
+  }
+  
+  .memory-card {
+    height: 55px;
+    width: 55px;
+  }
+  }
+
+  @media screen and (min-width: 500px) {
+
+    #win-msg{
+      margin: 40px 120px;
+    }
+
+    h1 {
+      font-size: 27px;
+    }
+    
+    .memory-card {
+      height: 80px;
+      width: 80px;
+    }
+    }
 
 @media screen and (min-width: 650px) {
 
@@ -290,8 +314,8 @@ footer {
   }
 
   .memory-card {
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
   }
 
   .logo {
@@ -316,18 +340,7 @@ footer {
   
 
   h1 {
-    font-size: 33px;
-    text-shadow: 1px 1px 1px #16265c,
-      1px 2px 1px #16265c,
-      1px 3px 1px #16265c,
-      1px 4px 1px #16265c,
-      1px 5px 1px #16265c,
-      1px 6px 1px #16265c,
-      1px 7px 1px #16265c,
-      1px 6px 18px rgba(2, 26, 89, 0.4),
-      1px 10px 22px rgba(2, 26, 89, 0.2),
-      1px 35px 25px rgba(2, 26, 89, 0.2),
-      1px 60px 30px rgba(2, 26, 89, 0.4);
+    font-size: 37px;
   }
 
   .count-moves {
@@ -356,3 +369,11 @@ footer {
     font-size: 15px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+
+  #win-msg{
+    margin: 200px 250px;
+  }
+}
+
