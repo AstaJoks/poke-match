@@ -18,9 +18,9 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   - [First Time User](#first-time-user)
   - [Returning User](#returning-user)
 - [Features](#features)
-  - [Header Section](#header-section)
+  - [Header](#header)
   - [Sound Button](#sound-button)
-  - [Cards](#cards)
+  - [Game Area](#game-area)
   - [Move Counter](#move-counter)
   - [Reset Button](#reset-button)
   - [Rules Section](#rules-section)
@@ -99,23 +99,39 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 ## Features
 
 
-### Header Section
+### Header
 
-  - 
+  - Header displays Pokemon Logo and the heading to introduce the game theme.
+  - Located at the top of the site.
   
-  <p><img src="" width="800px" height="auto"  alt="Header Section"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678551291/header_mghxqa.webp" width="500px" height="auto"  alt="Header"></p>
   
 ### Sound Button
 
-  - 
+  - Located at the header.
+  - Enables user to play flipping sound when the card is clicked and have game win sound when the game is finished.
+  - Sound is off by default when the website is loaded.
+  - User can turn it on/off during the game.
   
-  <p><img src="" width="800px" height="auto"  alt="Sound Button"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678551754/sound-button_bl247l.webp" width="200px" height="auto"  alt="Sound Button"></p>
 
-### Cards
+### Game Area
 
-  - 
+  - The main feature of the site.
+  - A grid of 16 cards (8 matching pairs), depicting different Pokemons.
+
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678553099/cards-front-pokemons_o7i2ki.webp" width="300px" height="auto"  alt="Cards Front Pokemons"></p>
+
+  - The back face of all cards is the same, depicting a Pokeball(There is a pokemon inside it).
+
+ <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678553662/pokeball_dekdyn.webp" width="300px" height="auto"  alt="Cards Back Pokeball"></p>
+
+  - Cards appear face down at the start of the game.
+  - On click, cards are turned face up. Matching pairs remain face up. Non-matching cards get flipped back face down.
   
-  <p><img src="" width="800px" height="auto"  alt="Cards"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678552661/game-grid_c6ormy.webp" width="300px" height="auto"  alt="Game Grid"></p>
+  
+ 
 
   ### Move Counter
 
@@ -137,7 +153,8 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
   ### Footer
 
-  - 
+  - The footer section includes game developer's social media accounts. Links will open to a new tab to allow easy navigation for the user.
+  - The footer is valuable to the user as it encourages them to keep connected via social media.
 
   <p><img src="" width="800px" height="auto"  alt="Footer"></p>
 
