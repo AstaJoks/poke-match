@@ -26,11 +26,10 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   - [Rules Section](#rules-section)
   - [Footer ](#footer)
   - [Win Message](#win-message)
-  - [New Game Button](#new-game-button)
   - [404 Page](#404-page)
-  - [Home Navigation Button](#home-navigation-button)
   - [Favicon](#favicon)
   - [Existing Features](#existing-features)
+  - [Features Left to Implement](#features-left-to-implement)
 - [Design](#design)
   - [Wireframes](#wireframes)
   - [Colour Pallete](#colour-pallete)
@@ -131,70 +130,67 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   
   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678552661/game-grid_c6ormy.webp" width="300px" height="auto"  alt="Game Grid"></p>
   
- 
-
   ### Move Counter
 
-  - 
+  - Moves counter increments by 1 every time the user clicks non-maching cards.
 
-  <p><img src="" width="800px" height="auto"  alt="Move Counter"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678555038/move-counter_s44bkl.webp" width="200px" height="auto"  alt="Move Counter"></p>
 
 ### Reset Button
 
-  - 
+  - Located below the game grid and move counter.
+  - On click, resets the game(flips all cards back face down) and move counter to 0.
 
-  <p><img src="" width="800px" height="auto"  alt="Reset-button"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678555135/reset-button_uiuljv.webp" width="200px" height="auto"  alt="Reset-button"></p>
 
   ### Rules Section
 
-  - 
+  - Located in the home page with no external links or modals.
+  - Informs the user in terms of how to play the game.
 
-  <p><img src="" width="800px" height="auto"  alt="Rules Section"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678555445/rules_aaeedm.webp" width="700px" height="auto"  alt="Rules Section"></p>
 
   ### Footer
 
-  - The footer section includes game developer's social media accounts. Links will open to a new tab to allow easy navigation for the user.
-  - The footer is valuable to the user as it encourages them to keep connected via social media.
+  - Located at the bottom of the site.
+  - Contains social media icons which link to site developer's LinkedIn profile and Github.
 
-  <p><img src="" width="800px" height="auto"  alt="Footer"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678555925/footer_xg02ro.webp" width="700px" height="auto"  alt="Footer"></p>
 
   ### Win Message
 
-  - 
+  - Final win message popup modal shows results of the game. It opens when game is finished.
+  - New Game button acts identically as Reset Button(On click, resets the game flips all cards back face down and move counter to 0) and close the win modal.
 
-  <p><img src="" width="800px" height="auto"  alt="Win Message"></p>
-
-  ### New Game Button
-
-  - 
-
-  <p><img src="" width="800px" height="auto"  alt="New Game Button"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678556808/winn-message_axb95c.webp" width="700px" height="auto"  alt="Win Message and New Game Button"></p>
 
   ### 404 Page
 
-  - 
+  - The 404 Page lets the user know that there is an error with their request and guides them to the home page.
 
-  <p><img src="" width="800px" height="auto"  alt="404 Page"></p>
-
-  ### Home Navigation Button
-
-  - 
-
-  <p><img src="" width="800px" height="auto"  alt="Home Navigation Button"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678558071/404_page_nu9znm.webp" width="600px" height="auto"  alt="404 Page"></p>
 
 ### Favicon
 
   - A site wide favicon is implemented with the Pokemon Logo.
   - This will provide an image in the tabs header to allow the user to easily identify the website if they have multiple tabs open.
 
-  <p><img src="" width="300px" height="auto"  alt="Favicon"></p>
-
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678556058/favicon_sylybr.webp" width="300px" height="auto"  alt="Favicon"></p>
 
 
 ### Existing Features
 
   - Responsive design.
   - Interactive elements.
+
+### Features Left to Implement
+
+  - Add the varying levels of difficulty:
+     - Enable the user to choose between different levels of difficulty.
+     - The higher the skill level, the more cards in the grid.
+  - Add the timer to clock the player's score, encouraging the player to beat their time in each round.
+  - Incorporating a "high scores" page would increase interest in the game. The page might include the player's username, number of moves and time it took to win the game.
+
 
 [🔼 Back to top](#contents)
 
