@@ -90,7 +90,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   ### Returning User
 
    - I want the game to be fun and interesting so I can recommend it to my friends.
-   - I want to to have the option to folow my game progress in the highscore leaderboard.
+   - I want to have the option to folow my game progress in the highscore leaderboard.
    - I want to have more options to get in touch with developer.
 
 [🔼 Back to top](#pokemon-memory-card-game)
@@ -140,7 +140,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   ### Reset Button
 
    - Located below the game grid and move counter.
-   - On click, resets the game(flips all cards back face down) and move counter to 0.
+   - On click, resets the game(flips all cards back face down and move counter to 0).
 
    <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678555135/reset-button_uiuljv.webp" width="200px" height="auto"  alt="Reset-button"></p>
 
@@ -155,13 +155,14 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    - Located at the bottom of the site.
    - Contains social media icons which link to site developer's LinkedIn profile and Github.
+   - Links will open to a new tab to allow easy navigation for the user.
 
    <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678555925/footer_xg02ro.webp" width="700px" height="auto"  alt="Footer"></p>
 
   ### Win Message
 
    - Final win message popup modal shows results of the game. It opens when game is finished.
-   - New Game button acts identically as Reset Button(On click, resets the game flips all cards back face down and move counter to 0) and close the win modal.
+   - New Game button acts identically as Reset Button(flips all cards back face down and move counter to 0) and close the win modal.
 
    <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678556808/winn-message_axb95c.webp" width="500px" height="auto"  alt="Win Message and New Game Button"></p>
 
@@ -200,24 +201,24 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    - Home Page
 
-   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561217/home-page_k065xx.webp" width="700px" height="auto"  alt="Wireframe-homme-page"></p>
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561217/home-page_k065xx.webp" width="700px" height="auto"  alt="Wireframe Home Page"></p>
 
    - Win Modal
 
-   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561366/Win_-modal_omxxgn.webp" width="700px" height="auto"  alt="Wireframe-homme-page"></p>
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561366/Win_-modal_omxxgn.webp" width="700px" height="auto"  alt="Wireframe Win Modal"></p>
 
    - 404 Page
 
-   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561370/404-page_qkyc0w.webp" width="400px" height="auto"  alt="Wireframe-homme-page"></p>
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561370/404-page_qkyc0w.webp" width="400px" height="auto"  alt="Wireframe 404 Page"></p>
 
 
   ### Colour Pallete
 
-   - The main colour scheme follows the design of the Pokemon Logo, maintaining a dark blue and yellow (used some shades of these two colours for shadows and borders):
+   - The main colour scheme follows the design of the Pokemon Logo, maintaining a dark blue and yellow (I used some shades of these two colours for shadows and borders):
      - Dark Blue: #020b58,
      - Light Yellow: #FCFA7B.
 
-     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678565603/colour_kcx9ow.webp" width="200px" height="auto"  alt="Wireframe-homme-page"></p>
+     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678565603/colour_kcx9ow.webp" width="200px" height="auto"  alt="Colour Pallete"></p>
 
   ### Typography
 
@@ -254,7 +255,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
   ### Ezgif
 
-   - https://ezgif.com was used to convert(from png to webp) images and reduce their size.
+   - https://ezgif.com was used to reduce the size of the images used throughout the website.
 
 [🔼 Back to top](#pokemon-memory-card-game)
 
@@ -272,26 +273,32 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
 ## Deployment
 
+   This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal.
+
    ### Deploying on Github Pages
 
    To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
-  - Log into GitHub or create an account.
-  - Locate the GitHub Repository.
-  - At the top of the repository, select Settings from the menu items.
-  - Scroll down the Settings page to the "Pages" section.
-  - Under "Source" click the drop-down menu labelled "None" and select "Main".
-  - Upon selection, the page will automatically refresh meaning that the website is now deployed.
-  - Scroll back down to the "Pages" section to retrieve the deployed link.
+   - Log into GitHub or create an account.
+   - Locate the GitHub Repository.
+   - At the top of the repository, select Settings from the menu items.
+   - Scroll down the Settings page to the "Pages" section.
+   - Under "Source" click the drop-down menu labelled "None" and select "Main".
+   - Upon selection, the page will automatically refresh meaning that the website is now deployed.
+   - Scroll back down to the "Pages" section to retrieve the deployed link.
 
- The live link can be found [here](https://astajoks.github.io/pokemon-memory-card-game/)
+   The live link can be found [here](https://astajoks.github.io/pokemon-memory-card-game/)
 
    ### Forking the Repository
 
-  You can fork the repository by following these steps:
+   You can fork the repository by following these steps:
 
-  - Go to the GitHub repository.
-  - Click on Fork button in the upper right hand corner.
+   - Go to the GitHub repository.
+   - Locate the Fork button on the top-right corner of the page and click on it.
+   - Select an owner for the forked repository and give it a name.
+   - Add a description of the repository if you want to.
+   - Choose whether to copy only the default branch or all of the branches to the new fork (Only the default branch is copied by default).
+   - Click Create fork.
 
    ### Cloning the Repository
 
@@ -325,7 +332,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
    - [Readme](https://readme.so/)
    - [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/)
 
-   Images and Sounds:
+   - Images and Sounds:
       - [Pokemon Logo](https://pngimg.com/image/27645)
       - [Pokemon Logo for Fanicon](https://www.pngall.com/pokemon-logo-png/download/106687)
       - [Pokemon Logo for Win Message](https://www.pngmart.com/image/9493)
