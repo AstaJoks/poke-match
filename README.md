@@ -262,20 +262,56 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
 ## Testing
 
-   ### Functional Testing
-   ### Manual Testing
-   ### Lighthouse Testing
-   ### Validator Testing
-   ### Unfixed Bugs
+  ### Functional Testing
+  ### Manual Testing
+
+   - The website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
+
+   - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhoneX, iPhone11 & Samsung Galaxy NotePro.
+
+   - All buttons were checked to ensure that they are working with no issues.
+
+   - A large amount of testing was done to ensure that the game working with no bugs.
+
+   - Friends and family members were asked to review the game and documentation to point out any bugs and/or user experience issues. 
+
+  ### Lighthouse Testing
+
+  ### Validator Testing
+
+   - HTML was validated using the official [W3C validator](https://validator.w3.org/)
+
+     - No errors were returned.
+
+     <p><img src="" width="500px" height="auto"  alt="HTML-validator"></p>
+
+   - CSS was validated using the official [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
+
+     - No errors were found.
+
+     <p><img src="" width="500px" height="auto"  alt="CSS-validator"></p>
+
+   - JavaScript was validated using the official [JS Hint](https://jshint.com/)
+
+     - Configure settings were changed to accept ES6 Javascript features.
+
+     - No errors were returned.
+
+     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678576782/js-hint_z8elfx.webp" width="600px" height="auto"  alt="JS Hint"></p>
+
+
+      
+
+  ### Unfixed Bugs
    
 [🔼 Back to top](#pokemon-memory-card-game)
 
 
 ## Deployment
 
-   This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal.
+  This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal.
 
-   ### Deploying on Github Pages
+  ### Deploying on Github Pages
 
    To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
@@ -289,7 +325,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    The live link can be found [here](https://astajoks.github.io/pokemon-memory-card-game/)
 
-   ### Forking the Repository
+  ### Forking the Repository
 
    You can fork the repository by following these steps:
 
@@ -300,7 +336,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
    - Choose whether to copy only the default branch or all of the branches to the new fork (Only the default branch is copied by default).
    - Click Create fork.
 
-   ### Cloning the Repository
+  ### Cloning the Repository
 
    You can clone the repository by following these steps:
 
