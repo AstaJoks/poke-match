@@ -41,6 +41,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   - [Font Awesome](#font-awesome)
   - [Favicon](#favicon)
   - [Balsamiq](#balsamiq)
+  - [Ezgif](#ezgif)
 - [Testing](testing)
   - [Functional Testing](#functional-testing)
   - [Manual Testing](#manual-testing)
@@ -216,7 +217,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
      - Dark Blue: #020b58,
      - Light Yellow: #FCFA7B.
 
-    <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678565603/colour_kcx9ow.webp" width="200px" height="auto"  alt="Wireframe-homme-page"></p>
+     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678565603/colour_kcx9ow.webp" width="200px" height="auto"  alt="Wireframe-homme-page"></p>
 
   ### Typography
 
@@ -257,5 +258,92 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
 [🔼 Back to top](#pokemon-memory-card-game)
 
+
+## Testing
+
+   ### Functional Testing
+   ### Manual Testing
+   ### Lighthouse Testing
+   ### Validator Testing
+   ### Unfixed Bugs
+   
+[🔼 Back to top](#pokemon-memory-card-game)
+
+
+## Deployment
+
+   ### Deploying on Github Pages
+
+   To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+  - Log into GitHub or create an account.
+  - Locate the GitHub Repository.
+  - At the top of the repository, select Settings from the menu items.
+  - Scroll down the Settings page to the "Pages" section.
+  - Under "Source" click the drop-down menu labelled "None" and select "Main".
+  - Upon selection, the page will automatically refresh meaning that the website is now deployed.
+  - Scroll back down to the "Pages" section to retrieve the deployed link.
+
+ The live link can be found [here](https://astajoks.github.io/pokemon-memory-card-game/)
+
+   ### Forking the Repository
+
+  You can fork the repository by following these steps:
+
+  - Go to the GitHub repository.
+  - Click on Fork button in the upper right hand corner.
+
+   ### Cloning the Repository
+
+   You can clone the repository by following these steps:
+
+   - Log into GitHub.
+   - Find the repository you want to clone.
+   - To the left of the big green 'Gitpod' button, click the 'Code' dropdown menu.
+   - Copy the HTTPS or SSH address as required.
+   - Open Git Bash.
+   - Set up your new directory.
+   - Type "git clone the_SSH_or_https_address".
+   - Hit enter and the code will be cloned.
+
+[🔼 Back to top](#pokemon-memory-card-game)
+
+
+## Credits
+
+   ### Content
+
+   - [Linear Gradient Background | Pure Css | HTML and Css Tutorial](https://www.youtube.com/watch?v=qxRQ233JgCA) - instructions of how to create gradient background for buttons was taken from here.
+   - [Alien Memory Game](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game) - this repository was followed and some JavaScript code was taken and adapted to my game.
+   - [Smiley Memories](https://github.com/tomdu3/smiley-memories) - this repository was followed and some JavaScript code was taken and adapted to my game.
+   - [W3Schools](https://www.w3schools.com/) - was used as a general source of knowledge.
+   - [Responsive Memory Game Using HTML & CSS & JavaScript](https://www.youtube.com/watch?v=7JbBr9q4UF8) - inspiration for memory card game was taken from this tutorial.
+
+   ### Resources
+
+   - [Code Institute](https://codeinstitute.net/ie/)
+   - [Readme](https://readme.so/)
+   - [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/)
+
+   Images and Sounds:
+      - [Pokemon Logo](https://pngimg.com/image/27645)
+      - [Pokemon Logo for Fanicon](https://www.pngall.com/pokemon-logo-png/download/106687)
+      - [Pokemon Logo for Win Message](https://www.pngmart.com/image/9493)
+      - [Card Front Face](https://pnghunter.com/search/pokemon)
+      - [Card Back Face](https://pnghunter.com/search/pokemon/page/4/)
+      - [404 Page Image](https://www.pngmart.com/image/9961)
+      - [Flip Sound](https://freesound.org/people/florian_reinke/sounds/63533/)
+      - [Win Game Sound](https://freesound.org/people/Tuudurt/sounds/258142/)
+
+[🔼 Back to top](#pokemon-memory-card-game)
+
+
+## Acknowledgments
+
+   - I would like to thank Tutors support at Code Institute for their support.
+   - I would like to thank my Children for testing the game and my Husband for his support and patience.
+   - Finally, I would like to thank my Mentor Gareth McGirr for his guidance and feedback throughout this portfolio project.
+
+[🔼 Back to top](#pokemon-memory-card-game)
 
 
