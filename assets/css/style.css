@@ -8,7 +8,7 @@
 /* Body area */
 body {
   font-family: 'Changa', sans-serif;
-  background-color: rgb(252, 250, 123);
+  background-color: #FCFA7B;
   background-size: cover;
   position: relative;
   color: #020b58;
@@ -119,7 +119,7 @@ h1 {
   height: 100%;
   padding: 1px;
   background: #020b58;
-  border: 2px solid rgb(252, 250, 123);
+  border: 2px solid #FCFA7B;
   box-shadow: 5px 5px 15px #020b58;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
@@ -216,7 +216,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(252, 250, 123);
+  background-color: #FCFA7B;
   margin: 40px 3200px;
   border: 4px solid #020b58;
   padding: 20px 40px;
@@ -282,7 +282,7 @@ h2 {
   padding: 10px;
   font-size: 17px;
   background-color: #020b58;
-  color: rgb(252, 250, 123);
+  color: #FCFA7B;
   display: inline;
   text-decoration: none;
   border-radius: 8px;

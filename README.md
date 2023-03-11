@@ -162,13 +162,13 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   - Final win message popup modal shows results of the game. It opens when game is finished.
   - New Game button acts identically as Reset Button(On click, resets the game flips all cards back face down and move counter to 0) and close the win modal.
 
-  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678556808/winn-message_axb95c.webp" width="700px" height="auto"  alt="Win Message and New Game Button"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678556808/winn-message_axb95c.webp" width="500px" height="auto"  alt="Win Message and New Game Button"></p>
 
   ### 404 Page
 
   - The 404 Page lets the user know that there is an error with their request and guides them to the home page.
 
-  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678558071/404_page_nu9znm.webp" width="600px" height="auto"  alt="404 Page"></p>
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678558071/404_page_nu9znm.webp" width="500px" height="auto"  alt="404 Page"></p>
 
 ### Favicon
 
@@ -191,9 +191,34 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   - Add the timer to clock the player's score, encouraging the player to beat their time in each round.
   - Incorporating a "high scores" page would increase interest in the game. The page might include the player's username, number of moves and time it took to win the game.
 
-
 [🔼 Back to top](#contents)
 
-![Home page wireframe](docs/wireframes/homepage.png)
-</details>
-<details><summary>Rules page wireframe</summary>
+## Design
+
+### Wireframes
+
+  - Home Page
+
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561217/home-page_k065xx.webp" width="700px" height="auto"  alt="Wireframe-homme-page"></p>
+
+  - Win Modal
+
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561366/Win_-modal_omxxgn.webp" width="700px" height="auto"  alt="Wireframe-homme-page"></p>
+
+  - 404 Page
+
+  <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678561370/404-page_qkyc0w.webp" width="400px" height="auto"  alt="Wireframe-homme-page"></p>
+
+
+- [Design](#design)
+  - [Wireframes](#wireframes)
+  - [Colour Pallete](#colour-pallete)
+  - [Typography](#typography)
+- [Technologies](#technologies)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [JavaScript](#javascript)
+  - [Font Awesome](#font-awesome)
+  - [Favicon](#favicon)
+  - [Balsamiq](#balsamiq)
+
