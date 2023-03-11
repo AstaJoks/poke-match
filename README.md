@@ -6,7 +6,7 @@ Website is responsive in all major screen devices as desktop, laptop, tablet and
 
 Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, CSS and JavaScript.
 
-![Responsive Mockup](https://res.cloudinary.com/dcydt01ed/image/upload/v1678486561/responsive-mockup_zyrp2t.webp)
+![Responsive Mockup](https://res.cloudinary.com/dcydt01ed/image/upload/v1678498712/responsive-mockup_wos1qy.webp)
  [Pokemon Memory Card game - Live Webpage](https://astajoks.github.io/pokemon-memory-card-game/) (Right-click to open in a new tab) 
 
 
@@ -87,11 +87,13 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
    - I want to be able to get in touch with developer.
    - I want the game to be responsive no matter what device is played on.
 
-    ### Returning User
+  ### Returning User
 
    - I want the game to be fun and interesting so I can recommend it to my friends.
    - I want to to have the option to folow my game progress in the highscore leaderboard.
    - I want to have more options to get in touch with developer.
+
+   [🔼 Back to top](#contents)
   
   
 ## Features
