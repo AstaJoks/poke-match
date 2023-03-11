@@ -176,9 +176,25 @@ h2 {
 }
 
 /* Footer area */
-footer {
+.social-networks {
+  text-align: center;
+  margin: 20px 0 0 10px;
+}
+
+.social-networks>li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 150%;
+  margin: 1% 2%;
+  padding: 0 1%;
+  color: #020b58;
+}
+
+.footer {
   font-size: 15px;
-  padding: 30px;
+  padding: 15px;
 }
 
 
