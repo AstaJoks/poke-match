@@ -264,7 +264,59 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
   ### Functional Testing
 
-
+<table>
+  <tr>
+    <th>Element</th>
+    <th>Test</th>
+    <th>Completed Succsessfully</th>
+  </tr>
+  <tr>
+    <td>Sound</td>
+    <td>1. Flip sound works when the card is clicked. 2. Win sound works when the game is finished.</td>
+    <td>Yes (NOTE. Flip Sound does not work on Iphones. See Unfixed Bugs section)</td>
+  </tr>
+  <tr>
+    <td>Sound Button</td>
+    <td>1. Sound On/Off works as required. 2. Sound is Off by default</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Game Board</td>
+    <td>1. Cards appear face down at the start of the game. 2. On click, cards are turned face up/Matching pairs remain face up/Non-matching cards get flipped back face down.
+    3. Selecting the card pairs successfully/unsuccessfully. 4. Clicking only 2 cards at once allowed</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Reset Button</td>
+    <td>On click, resets the game(flips all cards back face down and move counter to 0)</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Social media Links</td>
+    <td>Social media icons in the footer link to the correct external link and open in new tab</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Win Message</td>
+    <td>Opens successfully when the game is finished</td>
+    <td>Yes</td>
+    </tr>
+    <tr>
+    <td>New Game Button</td>
+    <td>Reset game and close the win modal</td>
+    <td>Yes</td>
+    </tr>
+    <tr>
+    <td>404 Page</td>
+    <td>Is loading if the wrong or faulty URL is entered and redirecting to the Home Page</td>
+    <td>Yes</td>
+    </tr>
+     <tr>
+    <td>Find Them Here(Home Page) Button</td>
+    <td>Link to Home page successfullt</td>
+    <td>Yes</td>
+    </tr>
+</table>
 
   ### Manual Testing
 
@@ -279,6 +331,16 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
    - Friends and family members were asked to review the game and documentation to point out any bugs and/or user experience issues. 
 
   ### Lighthouse Testing
+
+   The performance test was done with Lighthouse through Google Chrome Developer Tools, both for desktop and mobile devices.
+
+   - Lighthouse test results for Desktop:
+
+   <p><img src="" width="1600px" height="auto"  alt="Lighthouse-desktop"></p>
+
+   - Lighthouse test results for Mobile:
+
+   <p><img src="" width="1600px" height="auto"  alt="Lighthouse-mobile"></p>
 
   ### Validator Testing
 
