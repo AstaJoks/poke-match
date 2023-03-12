@@ -47,6 +47,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   - [Manual Testing](#manual-testing)
   - [Lighthouse Testing](#lighthouse-testing)
   - [Validator Testing](#validator-testing)
+  - [Accessibility test](#accessibility-test)
   - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
   - [Deploying on GitHub Pages](#deploying-on-github-pages)
@@ -265,12 +266,12 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
   ### Functional Testing
 
 
-  
+
   ### Manual Testing
 
    - The website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
 
-   - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhoneX, iPhone11 & Samsung Galaxy NotePro.
+   - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhone12 Pro, iPhone11, Samsung Galaxy NotePro...
 
    - All buttons were checked to ensure that they are working with no issues.
 
@@ -316,6 +317,16 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
       
 
   ### Unfixed Bugs
+
+  - During the Manual Testing it was discovered that flip sound does not working on iPhones(tested on iPhone7, iPhone11, iPhone12 Pro, iPhone13).
+
+  - All sounds work perfectly on any other devices(It was tested on desktop, laptop, MackBook, Samsung Galaxy NotePro, Samsung Galaxy A22, A33, A80, Huawei P20, P30Pro, P40)
+
+  - Warning on all pages apears due to the fact that GitHub pages disable FLoC, which is Google's 3rd party cookie alternative. 
+
+    - Source: [GithubBlog](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites//).
+
+    <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678579794/warning_zta8gr.webp" width="500px" height="auto"  alt="Warning"></p>
    
 [🔼 Back to top](#pokemon-memory-card-game)
 
