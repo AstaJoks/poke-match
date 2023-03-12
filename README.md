@@ -104,8 +104,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    - Header displays Pokemon Logo and the heading to introduce the game theme.
    - Located at the top of the site.
-  
-   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678551291/header_mghxqa.webp" width="500px" height="auto"  alt="Header"></p>
+   <details><summary>Header</summary><p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678551291/header_mghxqa.webp" width="500px" height="auto"  alt="Header"></p></details>
   
   ### Sound Button
 
