@@ -263,6 +263,9 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 ## Testing
 
   ### Functional Testing
+
+
+  
   ### Manual Testing
 
    - The website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
@@ -281,15 +284,19 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    - HTML was validated using the official [W3C validator](https://validator.w3.org/)
 
-     - No errors were returned.
+     - On the first validation there were two warnings regarding sections that lack headings so these section were changed to div(no headings were needed).
 
-     <p><img src="" width="500px" height="auto"  alt="HTML-validator"></p>
+     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678577897/html-validator_j5vsgn.webp" width="500px" height="auto"  alt="HTML-validator"></p>
+
+     - The most recent validation shows no errors.
+
+     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678578442/html-validator1_ohgiw9.webp" width="500px" height="auto"  alt="HTML-validator"></p>
 
    - CSS was validated using the official [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
 
      - No errors were found.
 
-     <p><img src="" width="500px" height="auto"  alt="CSS-validator"></p>
+     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678578543/css-validator_l19ges.webp" width="500px" height="auto"  alt="CSS-validator"></p>
 
    - JavaScript was validated using the official [JS Hint](https://jshint.com/)
 
@@ -297,9 +304,15 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
      - No errors were returned.
 
-     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678576782/js-hint_z8elfx.webp" width="600px" height="auto"  alt="JS Hint"></p>
+     <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678576782/js-hint_z8elfx.webp" width="500px" height="auto"  alt="JS Hint"></p>
 
+  ### Accessibility test
 
+   - Accessibility of the site was tested with [WAVE](https://wave.webaim.org/).
+
+   -  No errors were returned and no contrast issues were detected.
+
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678579307/WAVE_srwka9.webp" width="300px" height="auto"  alt="JS Hint"></p>
       
 
   ### Unfixed Bugs
