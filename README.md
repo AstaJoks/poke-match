@@ -104,7 +104,8 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    - Header displays Pokemon Logo and the heading to introduce the game theme.
    - Located at the top of the site.
-   <details><summary>Header</summary><p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678551291/header_mghxqa.webp" width="500px" height="auto"  alt="Header"></p></details>
+  
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678551291/header_mghxqa.webp" width="500px" height="auto"  alt="Header"></p>
   
   ### Sound Button
 
@@ -271,14 +272,14 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
     <th>Completed Succsessfully</th>
   </tr>
   <tr>
-    <td>Sound</td>
-    <td>1. Flip sound works when the card is clicked. 2. Win sound works when the game is finished.</td>
-    <td>Yes (NOTE. Flip Sound does not work on Iphones. See Unfixed Bugs section)</td>
-  </tr>
-  <tr>
     <td>Sound Button</td>
     <td>1. Sound On/Off works as required. 2. Sound is Off by default</td>
     <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Sound</td>
+    <td>1. Flip sound plays when the card is clicked. 2. Win sound plays when the game is finished</td>
+    <td>Yes (NOTE. Flip Sound does not work on Iphones. See Unfixed Bugs section)</td>
   </tr>
   <tr>
     <td>Game Board</td>
@@ -313,7 +314,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
     </tr>
      <tr>
     <td>Find Them Here(Home Page) Button</td>
-    <td>Link to Home page successfullt</td>
+    <td>Link to Home page successfully</td>
     <td>Yes</td>
     </tr>
 </table>
