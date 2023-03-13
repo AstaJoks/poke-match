@@ -238,7 +238,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    - The Website was styled using custom CSS in an external file.
 
-  ### JavaScrip
+  ### JavaScript
 
    - For the logic of the game. To manipulate the HTML and CSS on the screen.
 
@@ -333,15 +333,15 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
   ### Lighthouse Testing
 
-   The performance test was done with Lighthouse through Google Chrome Developer Tools, both for desktop and mobile devices.
+   The performance test was done with Lighthouse through Google Chrome Developer Tools, both for desktop and mobile devices on the Incognito browser.
 
    - Lighthouse test results for Desktop:
 
-   <p><img src="" width="1600px" height="auto"  alt="Lighthouse-desktop"></p>
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678657680/lighthouse-desktop_mbtuoj.webp" width="500px" height="auto"  alt="Lighthouse-desktop"></p>
 
    - Lighthouse test results for Mobile:
 
-   <p><img src="" width="1600px" height="auto"  alt="Lighthouse-mobile"></p>
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678657680/lighthouse-mobile_vtopcv.webp" width="500px" height="auto"  alt="Lighthouse-mobile"></p>
 
   ### Validator Testing
 
