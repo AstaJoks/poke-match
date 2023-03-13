@@ -380,7 +380,7 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
   ### Unfixed Bugs
 
-  - During the Manual Testing it was discovered that flip sound does not working on iPhones(tested on iPhone7, iPhone11, iPhone12 Pro, iPhone13).
+  - During the Manual Testing it was discovered that flip sound is not working on iPhones(tested on iPhone7, iPhone11, iPhone12 Pro, iPhone13).
 
   - All sounds work perfectly on any other devices(It was tested on desktop, laptop, MackBook, Samsung Galaxy NotePro, Samsung Galaxy A22, A33, A80, Huawei P20, P30Pro, P40)
 
