@@ -337,11 +337,11 @@ Developed by Asta Jokstiene for Code Institute Project Portfolio 2 using HTML, C
 
    - Lighthouse test results for Desktop:
 
-   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678657680/lighthouse-desktop_mbtuoj.webp" width="500px" height="auto"  alt="Lighthouse-desktop"></p>
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678707141/lighthouse-desktop_r8nelo.jpg" width="500px" height="auto"  alt="Lighthouse-desktop"></p>
 
    - Lighthouse test results for Mobile:
 
-   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678657680/lighthouse-mobile_vtopcv.webp" width="500px" height="auto"  alt="Lighthouse-mobile"></p>
+   <p><img src="https://res.cloudinary.com/dcydt01ed/image/upload/v1678707141/lighthouse-mobile_x0px0c.jpg" width="500px" height="auto"  alt="Lighthouse-mobile"></p>
 
   ### Validator Testing
 
